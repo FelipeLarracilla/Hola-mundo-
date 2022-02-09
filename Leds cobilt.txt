@@ -1,0 +1,12 @@
+ TRISB = 0; // 0 decimal equivale a 0B00000000,tambien equivale a 0X00
+    // 0 equivale a la O de "OUTOUT", es decir salida digital 
+    // 1 equivale a la I de "INPUT", es decir, entrada digital
+    // TRISA,TRISB,TRISC,TRISD,TRISE, son palabras reservadas.
+    //Todas las terminales del puerto B son salidas digitales,a condicion 
+    //que se haya colocado el bit de configuracion PBADEN = OFF
+
+	while (1) {
+        LATB = 0B10101010;
+        LATB = 0B01010101;
+    
+    }
